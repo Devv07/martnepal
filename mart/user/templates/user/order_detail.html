@@ -1,0 +1,37 @@
+{% extends 'core/base.html' %}
+{% load django_bootstrap5 %}
+{% load static %}
+
+{% block title %}Order #{{ order.id }} - Shop Nepal{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h2 class="section-title">Order #{{ order.id }}</h2>
+    <div class="order-details">
+        <p><strong>Date:</strong> {{ order.created_at|date:"F d, Y" }}</p>
+        <p><strong>Total:</strong> Rs.{{ order.total_amount|floatformat:2 }}</p>
+        <p><strong>Status:</strong> {{ order.get_status_display }}</p>
+        <h3>Items</h3>
+        <div class="order-items">
+            {% for item in order.items.all %}
+            <div class="order-item">
+                <div class="order-item-image">
+                    {% if item.product.image and item.product.image.url %}
+                    <img src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
+                    {% else %}
+                    <img src="{% static 'images/placeholder.jpg' %}" alt="{{ item.product.name }}">
+                    {% endif %}
+                </div>
+                <div class="order-item-info">
+                    <h4>{{ item.product.name }}</h4>
+                    <p>Quantity: {{ item.quantity }}</p>
+                    <p>Price: Rs.{{ item.price|floatformat:2 }}</p>
+                    <p>Subtotal: Rs.{{ item.quantity|floatformat:2|multiply:item.price }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <a href="{% url 'user:order_history' %}" class="btn btn-primary">Back to Order History</a>
+    </div>
+</div>
+{% endblock %}

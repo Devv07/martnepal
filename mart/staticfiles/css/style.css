@@ -1,0 +1,232 @@
+:root {
+    --primary: #195be7;
+    --secondary: #1e40af;
+    --accent: #dc2626;
+    --dark: #1f2937;
+    --transition: all 0.3s ease;
+}
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.navbar-brand span {
+    color: #007bff;
+}
+
+.search-container {
+    max-width: 500px;
+    width: 100%;
+}
+
+.search-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0 15px;
+}
+
+/* Categories Navigation */
+.nav-categories {
+    background: #f8f9fa;
+    padding: 1rem 0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.category-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.category-menu li a {
+    color: var(--dark);
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.category-menu li a:hover {
+    color: var(--primary);
+}
+
+/* Hero Banner */
+.hero-banner {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 1.5rem auto;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    position: relative;
+    height: 400px;
+}
+
+.hero-content {
+    padding: 3rem;
+    color: white;
+    max-width: 600px;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-title {
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.btn-hero {
+    background: white;
+    color: var(--primary);
+    border: none;
+    border-radius: 50px;
+    padding: 0.8rem 2.5rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: var(--transition);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn-hero:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.hero-img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    max-width: 50%;
+    object-fit: cover;
+}
+
+/* Categories Section */
+.section-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 3rem 0 1.5rem;
+    position: relative;
+    padding-bottom: 0.8rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 70px;
+    height: 4px;
+    background: var(--primary);
+    border-radius: 10px;
+}
+
+.categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1.2rem;
+    margin-bottom: 2.5rem;
+}
+
+.category-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: var(--transition);
+    border: 1px solid #e2e8f0;
+}
+
+.category-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    border-color: var(--primary);
+}
+
+.category-icon {
+    width: 70px;
+    height: 70px;
+    background: rgba(37, 99, 235, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    font-size: 1.8rem;
+    color: var(--primary);
+}
+
+/* Deals Section */
+.deals-section {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    border-radius: 15px;
+    padding: 2.5rem;
+    margin: 2.5rem 0;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.deals-content {
+    max-width: 600px;
+    position: relative;
+    z-index: 2;
+}
+
+.deals-title {
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.timer {
+    display: flex;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.timer-box {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    padding: 0.8rem;
+    min-width: 70px;
+    text-align: center;
+    backdrop-filter: blur(5px);
+}
+
+.timer-value {
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.timer-label {
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
