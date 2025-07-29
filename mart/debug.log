@@ -6680,3 +6680,2330 @@ Traceback (most recent call last):
   File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 615, in find_filter
     raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
 django.template.exceptions.TemplateSyntaxError: Invalid filter: 'multiply'
+INFO 2025-07-28 15:04:37,778 autoreload Watching for file changes with StatReloader
+WARNING 2025-07-28 15:04:40,340 log Not Found: /favicon.ico
+ERROR 2025-07-28 15:20:14,686 log Internal Server Error: /user/order/24/
+Traceback (most recent call last):
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "S:\nepalmart\my_env\lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "S:\nepalmart\mart\user\views.py", line 50, in order_detail
+    return render(request, 'user/order_detail.html', {'order': order})
+  File "S:\nepalmart\my_env\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\defaulttags.py", line 862, in do_for
+    nodelist_loop = parser.parse(
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 489, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 487, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 705, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 615, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'multiply'
+INFO 2025-07-28 15:23:40,319 autoreload S:\nepalmart\mart\user\views.py changed, reloading.
+INFO 2025-07-28 15:23:41,419 autoreload Watching for file changes with StatReloader
+ERROR 2025-07-28 15:23:46,319 log Internal Server Error: /user/order/24/
+Traceback (most recent call last):
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "S:\nepalmart\my_env\lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "S:\nepalmart\mart\user\views.py", line 59, in order_detail
+    return render(request, 'user/order_detail.html', {'order': order, 'items': items})
+  File "S:\nepalmart\my_env\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\defaulttags.py", line 862, in do_for
+    nodelist_loop = parser.parse(
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 489, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 487, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 705, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 615, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'multiply'
+ERROR 2025-07-28 15:23:47,538 log Internal Server Error: /user/order/24/
+Traceback (most recent call last):
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "S:\nepalmart\my_env\lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "S:\nepalmart\mart\user\views.py", line 59, in order_detail
+    return render(request, 'user/order_detail.html', {'order': order, 'items': items})
+  File "S:\nepalmart\my_env\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\defaulttags.py", line 862, in do_for
+    nodelist_loop = parser.parse(
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 489, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 487, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 705, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 615, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'multiply'
+ERROR 2025-07-28 15:23:47,765 log Internal Server Error: /user/order/24/
+Traceback (most recent call last):
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "S:\nepalmart\my_env\lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "S:\nepalmart\mart\user\views.py", line 59, in order_detail
+    return render(request, 'user/order_detail.html', {'order': order, 'items': items})
+  File "S:\nepalmart\my_env\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\defaulttags.py", line 862, in do_for
+    nodelist_loop = parser.parse(
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 489, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 487, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 705, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 615, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'multiply'
+ERROR 2025-07-28 15:25:06,246 log Internal Server Error: /user/order/24/
+Traceback (most recent call last):
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "S:\nepalmart\my_env\lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "S:\nepalmart\mart\user\views.py", line 59, in order_detail
+    return render(request, 'user/order_detail.html', {'order': order, 'items': items})
+  File "S:\nepalmart\my_env\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\defaulttags.py", line 862, in do_for
+    nodelist_loop = parser.parse(
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 489, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 487, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 705, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 615, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'multiply'
+ERROR 2025-07-28 15:25:07,195 log Internal Server Error: /user/order/24/
+Traceback (most recent call last):
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "S:\nepalmart\my_env\lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "S:\nepalmart\mart\user\views.py", line 59, in order_detail
+    return render(request, 'user/order_detail.html', {'order': order, 'items': items})
+  File "S:\nepalmart\my_env\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\defaulttags.py", line 862, in do_for
+    nodelist_loop = parser.parse(
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 489, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 487, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 705, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 615, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'multiply'
+ERROR 2025-07-28 15:25:07,407 log Internal Server Error: /user/order/24/
+Traceback (most recent call last):
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "S:\nepalmart\my_env\lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "S:\nepalmart\mart\user\views.py", line 59, in order_detail
+    return render(request, 'user/order_detail.html', {'order': order, 'items': items})
+  File "S:\nepalmart\my_env\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\defaulttags.py", line 862, in do_for
+    nodelist_loop = parser.parse(
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 489, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 487, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 705, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 615, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'multiply'
+ERROR 2025-07-28 15:25:29,558 log Internal Server Error: /user/order/24/
+Traceback (most recent call last):
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "S:\nepalmart\my_env\lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "S:\nepalmart\mart\user\views.py", line 59, in order_detail
+    return render(request, 'user/order_detail.html', {'order': order, 'items': items})
+  File "S:\nepalmart\my_env\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\defaulttags.py", line 862, in do_for
+    nodelist_loop = parser.parse(
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 489, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 487, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 705, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 615, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'multiply'
+ERROR 2025-07-28 15:25:29,770 log Internal Server Error: /user/order/24/
+Traceback (most recent call last):
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "S:\nepalmart\my_env\lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "S:\nepalmart\mart\user\views.py", line 59, in order_detail
+    return render(request, 'user/order_detail.html', {'order': order, 'items': items})
+  File "S:\nepalmart\my_env\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\defaulttags.py", line 862, in do_for
+    nodelist_loop = parser.parse(
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 489, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 487, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 705, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 615, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'multiply'
+ERROR 2025-07-28 15:25:52,777 log Internal Server Error: /user/order/24/
+Traceback (most recent call last):
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "S:\nepalmart\my_env\lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "S:\nepalmart\mart\user\views.py", line 59, in order_detail
+    return render(request, 'user/order_detail.html', {'order': order, 'items': items})
+  File "S:\nepalmart\my_env\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\defaulttags.py", line 862, in do_for
+    nodelist_loop = parser.parse(
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 489, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 487, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 705, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 615, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'multiply'
+INFO 2025-07-28 15:28:52,836 autoreload S:\nepalmart\mart\user\views.py changed, reloading.
+INFO 2025-07-28 15:28:53,653 autoreload Watching for file changes with StatReloader
+ERROR 2025-07-28 15:28:58,394 log Internal Server Error: /user/order/24/
+Traceback (most recent call last):
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "S:\nepalmart\my_env\lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "S:\nepalmart\mart\user\views.py", line 59, in order_detail
+    return render(request, 'user/order_detail.html', {'order': order, 'items': items})
+  File "S:\nepalmart\my_env\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\defaulttags.py", line 862, in do_for
+    nodelist_loop = parser.parse(
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 489, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 487, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 705, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 615, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'multiply'
+ERROR 2025-07-28 15:28:59,329 log Internal Server Error: /user/order/24/
+Traceback (most recent call last):
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "S:\nepalmart\my_env\lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "S:\nepalmart\mart\user\views.py", line 59, in order_detail
+    return render(request, 'user/order_detail.html', {'order': order, 'items': items})
+  File "S:\nepalmart\my_env\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\defaulttags.py", line 862, in do_for
+    nodelist_loop = parser.parse(
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 489, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 487, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 705, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 615, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'multiply'
+ERROR 2025-07-28 15:28:59,508 log Internal Server Error: /user/order/24/
+Traceback (most recent call last):
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "S:\nepalmart\my_env\lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "S:\nepalmart\mart\user\views.py", line 59, in order_detail
+    return render(request, 'user/order_detail.html', {'order': order, 'items': items})
+  File "S:\nepalmart\my_env\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\defaulttags.py", line 862, in do_for
+    nodelist_loop = parser.parse(
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 489, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 487, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 705, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 615, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'multiply'
+ERROR 2025-07-28 15:28:59,759 log Internal Server Error: /user/order/24/
+Traceback (most recent call last):
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "S:\nepalmart\my_env\lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "S:\nepalmart\mart\user\views.py", line 59, in order_detail
+    return render(request, 'user/order_detail.html', {'order': order, 'items': items})
+  File "S:\nepalmart\my_env\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\defaulttags.py", line 862, in do_for
+    nodelist_loop = parser.parse(
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 489, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 487, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 705, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 615, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'multiply'
+ERROR 2025-07-28 15:28:59,953 log Internal Server Error: /user/order/24/
+Traceback (most recent call last):
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "S:\nepalmart\my_env\lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "S:\nepalmart\mart\user\views.py", line 59, in order_detail
+    return render(request, 'user/order_detail.html', {'order': order, 'items': items})
+  File "S:\nepalmart\my_env\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\defaulttags.py", line 862, in do_for
+    nodelist_loop = parser.parse(
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 489, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 487, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 705, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 615, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'multiply'
+ERROR 2025-07-28 15:29:21,742 log Internal Server Error: /user/order/24/
+Traceback (most recent call last):
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "S:\nepalmart\my_env\lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "S:\nepalmart\mart\user\views.py", line 59, in order_detail
+    return render(request, 'user/order_detail.html', {'order': order, 'items': items})
+  File "S:\nepalmart\my_env\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\defaulttags.py", line 862, in do_for
+    nodelist_loop = parser.parse(
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 489, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 487, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 705, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 615, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'multiply'
+ERROR 2025-07-28 15:29:22,726 log Internal Server Error: /user/order/24/
+Traceback (most recent call last):
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "S:\nepalmart\my_env\lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "S:\nepalmart\mart\user\views.py", line 59, in order_detail
+    return render(request, 'user/order_detail.html', {'order': order, 'items': items})
+  File "S:\nepalmart\my_env\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\defaulttags.py", line 862, in do_for
+    nodelist_loop = parser.parse(
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 489, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 487, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 705, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 615, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'multiply'
+ERROR 2025-07-28 15:29:22,917 log Internal Server Error: /user/order/24/
+Traceback (most recent call last):
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "S:\nepalmart\my_env\lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "S:\nepalmart\mart\user\views.py", line 59, in order_detail
+    return render(request, 'user/order_detail.html', {'order': order, 'items': items})
+  File "S:\nepalmart\my_env\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\defaulttags.py", line 862, in do_for
+    nodelist_loop = parser.parse(
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 489, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 487, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 705, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 615, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'multiply'
+ERROR 2025-07-28 15:29:23,139 log Internal Server Error: /user/order/24/
+Traceback (most recent call last):
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "S:\nepalmart\my_env\lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "S:\nepalmart\mart\user\views.py", line 59, in order_detail
+    return render(request, 'user/order_detail.html', {'order': order, 'items': items})
+  File "S:\nepalmart\my_env\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\defaulttags.py", line 862, in do_for
+    nodelist_loop = parser.parse(
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 489, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 487, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 705, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 615, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'multiply'
+ERROR 2025-07-28 15:29:29,572 log Internal Server Error: /user/order/24/
+Traceback (most recent call last):
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "S:\nepalmart\my_env\lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "S:\nepalmart\mart\user\views.py", line 59, in order_detail
+    return render(request, 'user/order_detail.html', {'order': order, 'items': items})
+  File "S:\nepalmart\my_env\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\defaulttags.py", line 862, in do_for
+    nodelist_loop = parser.parse(
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 489, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 487, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 705, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 615, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'multiply'
+INFO 2025-07-28 15:38:54,060 autoreload S:\nepalmart\mart\user\urls.py changed, reloading.
+INFO 2025-07-28 15:38:54,787 autoreload Watching for file changes with StatReloader
+INFO 2025-07-28 15:39:00,374 autoreload S:\nepalmart\mart\user\urls.py changed, reloading.
+INFO 2025-07-28 15:39:01,143 autoreload Watching for file changes with StatReloader
+ERROR 2025-07-28 15:39:05,797 log Internal Server Error: /user/order/24/
+Traceback (most recent call last):
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "S:\nepalmart\my_env\lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "S:\nepalmart\mart\user\views.py", line 59, in order_detail
+    return render(request, 'user/order_detail.html', {'order': order, 'items': items})
+  File "S:\nepalmart\my_env\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\defaulttags.py", line 862, in do_for
+    nodelist_loop = parser.parse(
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 489, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 487, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 705, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 615, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'multiply'
+ERROR 2025-07-28 15:39:06,804 log Internal Server Error: /user/order/24/
+Traceback (most recent call last):
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "S:\nepalmart\my_env\lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "S:\nepalmart\mart\user\views.py", line 59, in order_detail
+    return render(request, 'user/order_detail.html', {'order': order, 'items': items})
+  File "S:\nepalmart\my_env\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\defaulttags.py", line 862, in do_for
+    nodelist_loop = parser.parse(
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 489, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 487, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 705, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 615, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'multiply'
+ERROR 2025-07-28 15:39:07,012 log Internal Server Error: /user/order/24/
+Traceback (most recent call last):
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "S:\nepalmart\my_env\lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "S:\nepalmart\mart\user\views.py", line 59, in order_detail
+    return render(request, 'user/order_detail.html', {'order': order, 'items': items})
+  File "S:\nepalmart\my_env\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\defaulttags.py", line 862, in do_for
+    nodelist_loop = parser.parse(
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 489, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 487, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 705, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 615, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'multiply'
+ERROR 2025-07-28 15:41:11,513 log Internal Server Error: /user/order/24/
+Traceback (most recent call last):
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "S:\nepalmart\my_env\lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "S:\nepalmart\mart\user\views.py", line 59, in order_detail
+    return render(request, 'user/order_detail.html', {'order': order, 'items': items})
+  File "S:\nepalmart\my_env\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\defaulttags.py", line 862, in do_for
+    nodelist_loop = parser.parse(
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 489, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 487, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 705, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 615, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'multiply'
+ERROR 2025-07-28 15:41:11,936 log Internal Server Error: /user/order/24/
+Traceback (most recent call last):
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "S:\nepalmart\my_env\lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "S:\nepalmart\mart\user\views.py", line 59, in order_detail
+    return render(request, 'user/order_detail.html', {'order': order, 'items': items})
+  File "S:\nepalmart\my_env\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\defaulttags.py", line 862, in do_for
+    nodelist_loop = parser.parse(
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 489, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 487, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 705, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 615, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'multiply'
+ERROR 2025-07-28 15:41:12,171 log Internal Server Error: /user/order/24/
+Traceback (most recent call last):
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "S:\nepalmart\my_env\lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "S:\nepalmart\mart\user\views.py", line 59, in order_detail
+    return render(request, 'user/order_detail.html', {'order': order, 'items': items})
+  File "S:\nepalmart\my_env\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\defaulttags.py", line 862, in do_for
+    nodelist_loop = parser.parse(
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 489, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 487, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 705, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 615, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'multiply'
+ERROR 2025-07-28 15:41:37,127 log Internal Server Error: /user/order/24/
+Traceback (most recent call last):
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "S:\nepalmart\my_env\lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "S:\nepalmart\mart\user\views.py", line 59, in order_detail
+    return render(request, 'user/order_detail.html', {'order': order, 'items': items})
+  File "S:\nepalmart\my_env\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\defaulttags.py", line 862, in do_for
+    nodelist_loop = parser.parse(
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 489, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 487, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 705, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 615, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'multiply'
+ERROR 2025-07-28 15:41:38,036 log Internal Server Error: /user/order/24/
+Traceback (most recent call last):
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "S:\nepalmart\my_env\lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "S:\nepalmart\mart\user\views.py", line 59, in order_detail
+    return render(request, 'user/order_detail.html', {'order': order, 'items': items})
+  File "S:\nepalmart\my_env\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\defaulttags.py", line 862, in do_for
+    nodelist_loop = parser.parse(
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 489, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 487, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 705, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 615, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'multiply'
+ERROR 2025-07-28 15:41:38,249 log Internal Server Error: /user/order/24/
+Traceback (most recent call last):
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "S:\nepalmart\my_env\lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "S:\nepalmart\mart\user\views.py", line 59, in order_detail
+    return render(request, 'user/order_detail.html', {'order': order, 'items': items})
+  File "S:\nepalmart\my_env\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\defaulttags.py", line 862, in do_for
+    nodelist_loop = parser.parse(
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 489, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 487, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 705, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 615, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'multiply'
+ERROR 2025-07-28 15:41:41,746 log Internal Server Error: /user/order/24/
+Traceback (most recent call last):
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "S:\nepalmart\my_env\lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "S:\nepalmart\mart\user\views.py", line 59, in order_detail
+    return render(request, 'user/order_detail.html', {'order': order, 'items': items})
+  File "S:\nepalmart\my_env\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\defaulttags.py", line 862, in do_for
+    nodelist_loop = parser.parse(
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 489, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 487, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 705, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 615, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'multiply'
+ERROR 2025-07-28 15:42:06,349 log Internal Server Error: /user/order/24/
+Traceback (most recent call last):
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "S:\nepalmart\my_env\lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "S:\nepalmart\mart\user\views.py", line 59, in order_detail
+    return render(request, 'user/order_detail.html', {'order': order, 'items': items})
+  File "S:\nepalmart\my_env\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\defaulttags.py", line 862, in do_for
+    nodelist_loop = parser.parse(
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 489, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 487, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 705, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 615, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'multiply'
+ERROR 2025-07-28 15:42:17,621 log Internal Server Error: /user/order/15/
+Traceback (most recent call last):
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "S:\nepalmart\my_env\lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "S:\nepalmart\mart\user\views.py", line 59, in order_detail
+    return render(request, 'user/order_detail.html', {'order': order, 'items': items})
+  File "S:\nepalmart\my_env\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\defaulttags.py", line 862, in do_for
+    nodelist_loop = parser.parse(
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 489, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 487, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 705, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 615, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'multiply'
+ERROR 2025-07-28 15:42:29,308 log Internal Server Error: /user/order/25/
+Traceback (most recent call last):
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "S:\nepalmart\my_env\lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "S:\nepalmart\mart\user\views.py", line 59, in order_detail
+    return render(request, 'user/order_detail.html', {'order': order, 'items': items})
+  File "S:\nepalmart\my_env\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\defaulttags.py", line 862, in do_for
+    nodelist_loop = parser.parse(
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 489, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 487, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 705, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 615, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'multiply'
+INFO 2025-07-28 15:57:36,298 autoreload Watching for file changes with StatReloader
+ERROR 2025-07-28 15:57:52,796 log Internal Server Error: /user/order/24/
+Traceback (most recent call last):
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "S:\nepalmart\my_env\lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "S:\nepalmart\mart\user\views.py", line 59, in order_detail
+    return render(request, 'user/order_detail.html', {'order': order, 'items': items})
+  File "S:\nepalmart\my_env\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\defaulttags.py", line 862, in do_for
+    nodelist_loop = parser.parse(
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 489, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 487, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 705, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 615, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'multiply'
+INFO 2025-07-28 16:01:30,618 autoreload S:\nepalmart\mart\user\views.py changed, reloading.
+INFO 2025-07-28 16:01:31,266 autoreload Watching for file changes with StatReloader
+INFO 2025-07-29 12:35:16,894 autoreload Watching for file changes with StatReloader
+WARNING 2025-07-29 12:47:42,294 log Not Found: /favicon.ico
+ERROR 2025-07-29 12:47:49,660 log Internal Server Error: /user/order/24/
+Traceback (most recent call last):
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "S:\nepalmart\my_env\lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "S:\nepalmart\mart\user\views.py", line 60, in order_detail
+    return render(request, 'user/order_detail.html', {'order': order, 'items': items})
+  File "S:\nepalmart\my_env\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\defaulttags.py", line 862, in do_for
+    nodelist_loop = parser.parse(
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 489, in parse
+    raise self.error(token, e)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 487, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 705, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 615, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'multiply'
+INFO 2025-07-29 13:10:34,548 autoreload S:\nepalmart\mart\user\views.py changed, reloading.
+INFO 2025-07-29 13:10:35,551 autoreload Watching for file changes with StatReloader
+INFO 2025-07-29 13:12:36,913 autoreload Watching for file changes with StatReloader
+INFO 2025-07-29 13:12:57,830 autoreload S:\nepalmart\mart\user\templatetags\user_tags.py changed, reloading.
+INFO 2025-07-29 13:12:58,568 autoreload Watching for file changes with StatReloader
+INFO 2025-07-29 13:21:44,103 autoreload Watching for file changes with StatReloader
+INFO 2025-07-29 13:25:22,397 autoreload Watching for file changes with StatReloader
+INFO 2025-07-29 13:50:01,051 autoreload S:\nepalmart\mart\user\urls.py changed, reloading.
+INFO 2025-07-29 13:50:01,686 autoreload Watching for file changes with StatReloader
+INFO 2025-07-29 13:50:57,161 autoreload S:\nepalmart\mart\user\views.py changed, reloading.
+INFO 2025-07-29 13:50:57,749 autoreload Watching for file changes with StatReloader
+INFO 2025-07-29 13:51:16,668 autoreload Watching for file changes with StatReloader
+INFO 2025-07-29 13:51:27,317 autoreload S:\nepalmart\mart\user\views.py changed, reloading.
+INFO 2025-07-29 13:51:28,077 autoreload Watching for file changes with StatReloader
+INFO 2025-07-29 13:51:32,597 autoreload S:\nepalmart\mart\user\views.py changed, reloading.
+INFO 2025-07-29 13:51:33,256 autoreload Watching for file changes with StatReloader
+INFO 2025-07-29 13:51:38,781 autoreload S:\nepalmart\mart\user\views.py changed, reloading.
+INFO 2025-07-29 13:51:39,453 autoreload Watching for file changes with StatReloader
+INFO 2025-07-29 13:51:41,851 autoreload S:\nepalmart\mart\user\views.py changed, reloading.
+INFO 2025-07-29 13:51:42,609 autoreload Watching for file changes with StatReloader
+INFO 2025-07-29 13:52:13,191 autoreload Watching for file changes with StatReloader
+INFO 2025-07-29 13:52:43,518 autoreload S:\nepalmart\mart\user\views.py changed, reloading.
+INFO 2025-07-29 13:52:44,237 autoreload Watching for file changes with StatReloader
+ERROR 2025-07-29 13:52:48,268 log Internal Server Error: /
+Traceback (most recent call last):
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "S:\nepalmart\mart\core\views.py", line 12, in home
+    return render(request, 'user/home.html', {
+  File "S:\nepalmart\my_env\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\defaulttags.py", line 243, in render
+    nodelist.append(node.render_annotated(context))
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "S:\nepalmart\my_env\lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "S:\nepalmart\my_env\lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'product_detail' not found. 'product_detail' is not a valid view function or pattern name.
+INFO 2025-07-29 13:55:51,189 autoreload Watching for file changes with StatReloader
+ERROR 2025-07-29 13:55:54,916 log Internal Server Error: /
+Traceback (most recent call last):
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "S:\nepalmart\mart\core\views.py", line 12, in home
+    return render(request, 'user/home.html', {
+  File "S:\nepalmart\my_env\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\defaulttags.py", line 243, in render
+    nodelist.append(node.render_annotated(context))
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "S:\nepalmart\my_env\lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "S:\nepalmart\my_env\lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'product_detail' not found. 'product_detail' is not a valid view function or pattern name.
+ERROR 2025-07-29 14:22:00,286 log Internal Server Error: /
+Traceback (most recent call last):
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "S:\nepalmart\mart\core\views.py", line 12, in home
+    return render(request, 'user/home.html', {
+  File "S:\nepalmart\my_env\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\defaulttags.py", line 243, in render
+    nodelist.append(node.render_annotated(context))
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "S:\nepalmart\my_env\lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "S:\nepalmart\my_env\lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'product_detail' not found. 'product_detail' is not a valid view function or pattern name.
+INFO 2025-07-29 14:24:04,731 autoreload Watching for file changes with StatReloader
+ERROR 2025-07-29 14:24:08,496 log Internal Server Error: /
+Traceback (most recent call last):
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "S:\nepalmart\my_env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "S:\nepalmart\mart\core\views.py", line 12, in home
+    return render(request, 'user/home.html', {
+  File "S:\nepalmart\my_env\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\defaulttags.py", line 243, in render
+    nodelist.append(node.render_annotated(context))
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+  File "S:\nepalmart\my_env\lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "S:\nepalmart\my_env\lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "S:\nepalmart\my_env\lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'product_detail' not found. 'product_detail' is not a valid view function or pattern name.
+INFO 2025-07-29 14:25:21,829 autoreload S:\nepalmart\mart\user\views.py changed, reloading.
+INFO 2025-07-29 14:25:22,542 autoreload Watching for file changes with StatReloader
+INFO 2025-07-29 14:25:40,348 autoreload S:\nepalmart\mart\user\urls.py changed, reloading.
+INFO 2025-07-29 14:25:41,004 autoreload Watching for file changes with StatReloader
+DEBUG 2025-07-29 14:27:11,491 views Redirecting to eSewa with params: {'amount': 6998.0, 'tax_amount': 0, 'total_amount': 6998.0, 'transaction_uuid': '302c5bf4-0e9a-4173-adeb-69f75ea220b9', 'product_code': 'EPAYTEST', 'product_service_charge': 0, 'product_delivery_charge': 0, 'success_url': 'http://127.0.0.1:8000/user/esewa-verify/', 'failure_url': 'http://127.0.0.1:8000/user/checkout/', 'signed_field_names': 'total_amount,transaction_uuid,product_code', 'signature': 'gauUODP8gBp/zK8P+e67j+s5RcDHQ8TjiKSRU7HrvI4='}
+DEBUG 2025-07-29 14:27:50,835 views eSewa verify request GET params: <QueryDict: {'data': ['eyJ0cmFuc2FjdGlvbl9jb2RlIjoiMDAwQkNaRCIsInN0YXR1cyI6IkNPTVBMRVRFIiwidG90YWxfYW1vdW50IjoiNjk5OC4wIiwidHJhbnNhY3Rpb25fdXVpZCI6IjMwMmM1YmY0LTBlOWEtNDE3My1hZGViLTY5Zjc1ZWEyMjBiOSIsInByb2R1Y3RfY29kZSI6IkVQQVlURVNUIiwic2lnbmVkX2ZpZWxkX25hbWVzIjoidHJhbnNhY3Rpb25fY29kZSxzdGF0dXMsdG90YWxfYW1vdW50LHRyYW5zYWN0aW9uX3V1aWQscHJvZHVjdF9jb2RlLHNpZ25lZF9maWVsZF9uYW1lcyIsInNpZ25hdHVyZSI6IlY5MFFJS2NZRi8xVGJyd0xieEhrTWhmQ2tyZlg2QTIwVFo5Q3krdEhraTQ9In0=']}>
+DEBUG 2025-07-29 14:27:50,835 views Decoded eSewa data: {'transaction_code': '000BCZD', 'status': 'COMPLETE', 'total_amount': '6998.0', 'transaction_uuid': '302c5bf4-0e9a-4173-adeb-69f75ea220b9', 'product_code': 'EPAYTEST', 'signed_field_names': 'transaction_code,status,total_amount,transaction_uuid,product_code,signed_field_names', 'signature': 'V90QIKcYF/1TbrwLbxHkMhfCkrfX6A20TZ9Cy+tHki4='}
+DEBUG 2025-07-29 14:27:50,849 connectionpool Starting new HTTPS connection (1): rc-epay.esewa.com.np:443
+DEBUG 2025-07-29 14:27:54,099 connectionpool https://rc-epay.esewa.com.np:443 "GET /api/epay/transaction/status/?product_code=EPAYTEST&total_amount=6998.00&transaction_uuid=302c5bf4-0e9a-4173-adeb-69f75ea220b9 HTTP/1.1" 200 None
+DEBUG 2025-07-29 14:27:54,102 views eSewa verification response: status=200, text={"product_code":"EPAYTEST","transaction_uuid":"302c5bf4-0e9a-4173-adeb-69f75ea220b9","total_amount":6998.0,"status":"COMPLETE","ref_id":"000BCZD"}
