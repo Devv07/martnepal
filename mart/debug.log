@@ -9007,3 +9007,6 @@ DEBUG 2025-07-29 14:27:50,835 views Decoded eSewa data: {'transaction_code': '00
 DEBUG 2025-07-29 14:27:50,849 connectionpool Starting new HTTPS connection (1): rc-epay.esewa.com.np:443
 DEBUG 2025-07-29 14:27:54,099 connectionpool https://rc-epay.esewa.com.np:443 "GET /api/epay/transaction/status/?product_code=EPAYTEST&total_amount=6998.00&transaction_uuid=302c5bf4-0e9a-4173-adeb-69f75ea220b9 HTTP/1.1" 200 None
 DEBUG 2025-07-29 14:27:54,102 views eSewa verification response: status=200, text={"product_code":"EPAYTEST","transaction_uuid":"302c5bf4-0e9a-4173-adeb-69f75ea220b9","total_amount":6998.0,"status":"COMPLETE","ref_id":"000BCZD"}
+INFO 2025-07-29 14:48:47,763 autoreload Watching for file changes with StatReloader
+INFO 2025-07-29 14:50:22,467 autoreload Watching for file changes with StatReloader
+INFO 2025-07-29 14:53:27,370 autoreload Watching for file changes with StatReloader
